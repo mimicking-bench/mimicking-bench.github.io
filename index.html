@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TACO: Benchmarking Generalizable Bimanual Tool-ACtion-Object Understanding</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+  <link rel="icon" href="https://twemoji.maxcdn.com/v/latest/svg/1f32e.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><font color="deepskyblue">Mimicking-Bench</font>: A Benchmark for Generalizable Humanoid-Scene Interaction Learning via Human Mimicking</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Yun Liu<sup>*,1,2,3,4</sup>,</span>
+            <span class="author-block">
+              Bowen Yang<sup>*,1,2</sup>,</span>
+            <span class="author-block">
+              Licheng Zhong<sup>*,3</sup>,
+            </span>
+            <span class="author-block">
+              He Wang<sup>2,5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://ericyi.github.io/">Li Yi</a><sup>1,3,4</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-equal-contribution">
+            <span class="author-block"><sup>*</sup> denotes equal contribution</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Tsinghua University,</span>
+            <span class="author-block"><sup>2</sup>Galbot,</span>
+            <span class="author-block"><sup>3</sup>Shanghai Qi Zhi Institute,</span>
+            <span class="author-block"><sup>4</sup>Shanghai Artificial Intelligence Laboratory,</span>
+            <span class="author-block"><sup>5</sup>Peking University</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/2401.08399.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://youtu.be/bIgHylU1oZo"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://1drv.ms/f/s!Ap-t7dLl7BFUfmNkrHubnoo8LCs?e=1h0Xhe"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset (pre-released version)</span>
+                  </a> -->
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.dropbox.com/scl/fo/8w7xir110nbcnq8uo1845/AOaHUxGEcR0sWvfmZRQQk9g?rlkey=xnhajvn71ua5i23w75la1nidx&st=9t8ofde7&dl=0"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset (V1)</span>
+                  </a> -->
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/leolyliu/TACO-Instructions"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/teaser.jpg">
+      <h2 class="subtitle has-text-centered">
+        <p><b><font color="deepskyblue">Mimicking-Bench</font> is the first benchmark for learning generalizable humanoid-scene interaction skills via mimicking human data, comprising six household interaction tasks. It integrates a diverse human skill reference dataset by leveraging the advances in motion capture dataset and interaction generation network, and constructs a skill-learning paradigm for human-to-humanoid knowledge transfer.</p>
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>Learning generic skills for humanoid robots interacting with 3D scenes by mimicking human data is a key research challenge with significant implications for robotics and real-world applications. However, existing methodologies and benchmarks are constrained by the use of small-scale, manually collected demonstrations, lacking the general dataset and benchmark support necessary to explore scene geometry generalization effectively.</p>
+          <p>To address this gap, we introduce Mimicking-Bench, the first comprehensive benchmark designed for generalizable humanoid-scene interaction learning through mimicking large-scale human animation references.</p>
+          <p>Mimicking-Bench includes six household full-body humanoid-scene interaction tasks, covering 11K diverse object shapes, along with 20K synthetic and 3K real-world human interaction skill references.</p>
+          <p>We construct a complete humanoid skill learning pipeline and benchmark approaches for motion retargeting, motion tracking, imitation learning, and their various combinations.</p>
+          <p>Extensive experiments highlight the value of human mimicking for skill learning, revealing key challenges and research directions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Us -->
+<section class="section" id="Contact Us">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Contact Us</h2>
+    <p>If you have any questions or suggestions, please contact Yun Liu (<b>yun-liu22@mails.tsinghua.edu.cn</b>), Bowen Yang (<b>ybw22@mails.tsinghua.edu.cn</b>), Licheng Zhong (<b>zlicheng.colmar@outlook.com</b>) or Li Yi (<b>ericyi0124@gmail.com</b>).</p>
+  </div>
+</section>
+
+<!-- BibTex -->
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{liu2024taco,
+      title={TACO: Benchmarking Generalizable Bimanual Tool-ACtion-Object Understanding},
+      author={Liu, Yun and Yang, Haolin and Si, Xu and Liu, Ling and Li, Zipeng and Zhang, Yuxiang and Liu, Yebin and Yi, Li},
+      journal={arXiv preprint arXiv:2401.08399},
+      year={2024}
+    }</code></pre>
+  </div>
+</section> -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/pdf/2401.08399.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This webpage is built with the template from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. We sincerely thank their authors for developing and open-sourcing this template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
